@@ -13,6 +13,9 @@
 		36EF920D2A289EA000A0E87F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EF920C2A289EA000A0E87F /* Preview Assets.xcassets */; };
 		36EF920F2A289EA000A0E87F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EF920E2A289EA000A0E87F /* Persistence.swift */; };
 		36EF92122A289EA000A0E87F /* TaskManagerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36EF92102A289EA000A0E87F /* TaskManagerApp.xcdatamodeld */; };
+		36EF921B2A289F0400A0E87F /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36EF92182A289F0400A0E87F /* sound-ding.mp3 */; };
+		36EF921C2A289F0400A0E87F /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36EF92192A289F0400A0E87F /* sound-rise.mp3 */; };
+		36EF921D2A289F0400A0E87F /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36EF921A2A289F0400A0E87F /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,10 @@
 		36EF920C2A289EA000A0E87F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36EF920E2A289EA000A0E87F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		36EF92112A289EA000A0E87F /* TaskManagerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManagerApp.xcdatamodel; sourceTree = "<group>"; };
+		36EF92182A289F0400A0E87F /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		36EF92192A289F0400A0E87F /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		36EF921A2A289F0400A0E87F /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		36EF92242A289FC500A0E87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +62,15 @@
 		36EF92042A289E9E00A0E87F /* TaskManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				36EF92242A289FC500A0E87F /* Info.plist */,
+				36EF92232A289F8300A0E87F /* Model */,
+				36EF921F2A289F2000A0E87F /* Views */,
+				36EF92222A289F3400A0E87F /* Style */,
+				36EF92202A289F2300A0E87F /* Extensions */,
+				36EF92212A289F3100A0E87F /* Utils */,
+				36EF921E2A289F0900A0E87F /* Sounds */,
 				36EF92052A289E9E00A0E87F /* TaskManagerAppApp.swift */,
-				36EF92072A289E9E00A0E87F /* ContentView.swift */,
 				36EF92092A289EA000A0E87F /* Assets.xcassets */,
-				36EF920E2A289EA000A0E87F /* Persistence.swift */,
-				36EF92102A289EA000A0E87F /* TaskManagerApp.xcdatamodeld */,
 				36EF920B2A289EA000A0E87F /* Preview Content */,
 			);
 			path = TaskManagerApp;
@@ -71,6 +82,54 @@
 				36EF920C2A289EA000A0E87F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		36EF921E2A289F0900A0E87F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				36EF92182A289F0400A0E87F /* sound-ding.mp3 */,
+				36EF92192A289F0400A0E87F /* sound-rise.mp3 */,
+				36EF921A2A289F0400A0E87F /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		36EF921F2A289F2000A0E87F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36EF92072A289E9E00A0E87F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36EF92202A289F2300A0E87F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36EF92212A289F3100A0E87F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		36EF92222A289F3400A0E87F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		36EF92232A289F8300A0E87F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36EF920E2A289EA000A0E87F /* Persistence.swift */,
+				36EF92102A289EA000A0E87F /* TaskManagerApp.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36EF920D2A289EA000A0E87F /* Preview Assets.xcassets in Resources */,
+				36EF921C2A289F0400A0E87F /* sound-rise.mp3 in Resources */,
 				36EF920A2A289EA000A0E87F /* Assets.xcassets in Resources */,
+				36EF921D2A289F0400A0E87F /* sound-tap.mp3 in Resources */,
+				36EF921B2A289F0400A0E87F /* sound-ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +340,11 @@
 				DEVELOPMENT_TEAM = 56GPYX4M8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskManagerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,9 +352,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CanKanbur.TaskManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,11 +372,11 @@
 				DEVELOPMENT_TEAM = 56GPYX4M8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskManagerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,9 +384,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CanKanbur.TaskManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
